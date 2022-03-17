@@ -1,0 +1,1 @@
+# Bell-LaPadula_security_model
