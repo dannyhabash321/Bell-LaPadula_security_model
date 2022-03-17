@@ -1,0 +1,56 @@
+addsub kel0004 LOW
+addsub jms0381 MEDIUM
+addsub sam0039 HIGH
+addobj file001 MEDIUM
+addobj file002 LOW
+status
+write kel0004 file002 20
+write jms0381 file001 10
+status 10
+status
+read sam0039 file001
+read kel0004 file001
+read kel0004 file002
+addobj file003 HIGH
+status
+write jms0381 file002
+read sam0039
+write jms0381 file001 40 80
+read krt1039 file003 50
+write kel0004 file001 10
+status
+addsub sra0002 LOW
+read sra0002 file003
+addsub krt0084 MEDIUM
+addsub liz0028 HIGH
+status
+write krt1039 file004 40
+write liz0028 file001 20
+write liz0028 file003 30
+read sra0002 file002
+status
+addobj file004 HIGH
+addobj file005 LOW
+read liz0028 file005
+write sra0002 file005 50
+status
+addobj file006 MEDIUM
+write jms0381 file006 30
+write kel0004 file006 20
+status
+read liz0028 file003
+read krt1039 file004
+read jms0381 file004
+read krt0084 file001
+read krt0084 file005
+status
+write sam0039 file006 90
+write sam0039 file005 x
+write liz0028 file004 60
+write liz0028 file005 60
+status
+read sra0002 file007
+exec adm0831 file004
+read sam0039 file006
+read jms0381 file005
+write sra0002 file004 70
